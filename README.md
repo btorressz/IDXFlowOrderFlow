@@ -67,3 +67,17 @@ This repository contains an Ethereum adaptation of the Solana-based **IDXFlow Or
 
 ---
 
+## 🧪 Mock Contract
+
+The `MockIDXFlow.sol` contract is a simplified version of the full contract. It focuses only on:
+
+- ✅ Staking logic  
+- ✅ Fee tier progression  
+- ✅ Reward claims and vesting  
+- 🚫 Omits LayerZero, Merkle, KYC, ZK, ERC-6551 integrations  
+
+Use it for isolated logic testing or gas profiling.
+
+---
+
+
