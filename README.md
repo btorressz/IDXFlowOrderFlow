@@ -46,3 +46,24 @@ This repository contains an Ethereum adaptation of the Solana-based **IDXFlow Or
   Allows syncing of key state across chains using LayerZero.
 
 ---
+
+
+## 🔄 Solana vs. Ethereum Comparison
+
+| Feature                     | Solana (Anchor)                                | Ethereum (Solidity)                                |
+|----------------------------|--------------------------------------------------|----------------------------------------------------|
+| Account System             | Program Derived Accounts (PDAs)                 | Mappings + AccessControl                           |
+| Token Standard             | SPL Token                                       | ERC-20 with SafeERC20                              |
+| Permit-Based Staking       | Not supported                                   | ERC-2612 `permit()` used for gasless staking       |
+| Epoch Time                 | `Clock::get().unix_timestamp`                   | `block.timestamp`                                  |
+| Staking Vault              | Custom SPL token vault                          | ERC-4626 Vault                                     |
+| Auto-Stake on Transfer     | Manual transfer hook                            | ERC-1363 `transferAndCall()`                       |
+| NFT-Bound Account          | Manual mapping                                  | ERC-6551 `account()` binding                       |
+| Cross-Chain Sync           | Wormhole / Custom CPI                           | LayerZero endpoint                                 |
+| ZK Proofs                  | Custom Anchor CPI                               | Verifier interface callable on-chain               |
+| KYC Checks                 | Manual check via account                        | Identity registry interface                        |
+| Merkle Claims              | Manual PDA + hash check                         | OpenZeppelin’s MerkleProof                         |
+| Gas Rebates                | Not common                                      | Built-in rebate with `gasleft()` diffing           |
+
+---
+
