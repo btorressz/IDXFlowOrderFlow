@@ -94,3 +94,14 @@ No external tools like Hardhat or Truffle are needed—just copy/paste into Remi
 ---
 
 
+## 🔮 Future Enhancements
+
+- 🧠 Full zkSNARK verifier integration on Ethereum L2  
+- 💼 DAO governance for parameter changes (Snapshot, Tally)  
+- 🔁 ERC-4626 strategy vaults for native auto-compounding  
+- 🧰 TypeScript SDK for frontend integration  
+
+---
+
+
+
