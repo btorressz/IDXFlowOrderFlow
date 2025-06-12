@@ -80,4 +80,17 @@ Use it for isolated logic testing or gas profiling.
 
 ---
 
+## 🧾 JavaScript Tests
+
+The `tests.js` file is designed to run in Remix IDE’s **JavaScript VM** and provides:
+
+- 🧪 Test coverage for staking
+- 💰 Reward claim functionality
+- 📈 Tier upgrade verification
+- ⏱ Vesting mechanics
+
+No external tools like Hardhat or Truffle are needed—just copy/paste into Remix’s test pane.
+
+---
+
 
